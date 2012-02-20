@@ -1,0 +1,39 @@
+
+
+WHAT IS THIS?
+
+    This is a collection of notes and documentation I've written in the process
+    of building my own operating system (see also:
+	https://bitbucket.org/dgaur/dx and http://www.dangaur.com/portfolio/dx).
+
+    I'd originally toyed with the idea of turning these bits into a longer
+    whitepaper or even a book; and the outline is structured in that fashion.
+    Since that seems highly unlikely now, figured I'd just post them online.
+
+
+THIS DOCUMENTATION IS TERRIBLE!  WHO WOULD EVER READ THIS?!
+
+    Be aware that these documents are extremely rough, since I wrote them as
+	notes to myself, in my own cryptic shorthand, etc.
+
+    That said, I've scrubbed them (slightly) for semi-readability; I still
+    occassionally update or edit them; and I've been adding references
+    periodically as I stumble across interesting new papers or sources, etc.
+
+    For better treatment of these topics, try http://wiki.osdev.org/Main_Page
+
+
+
+WHAT ARE THESE FILES?
+
+    outline.md:     My OS development notes.  Semi-organized, and vaguely
+                    chronological.
+
+    references.md:  A list of books, papers, links and other resources on
+                    OS development.  I've read some, but not all.  In a few
+                    rare instances, assessments of the sources themselves,
+
+    README:         this file.
+
+
+
