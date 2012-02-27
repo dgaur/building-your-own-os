@@ -107,7 +107,7 @@ It's important to answer some fundamental questions first:
 - Layering of kernel functions + impact on functionality.  Not all
   layers have access to the same functions.
 - Device driver model.  Loadable modules?  Loadable modules
-  require a file format that is friendly towards runtime/dynamic
+  require a file format that is friendly towards run-time/dynamic
   linking (ELF, etc).  ISR/DPC (bottom-half, top-half, etc).
 - Virtual memory?
 - Scheduling: native mechanism (TSS) vs. software-only.
@@ -681,7 +681,7 @@ as you go along.
   complicated, but there are a lot of related bits scattered about the
   micro-architecture and documentation.  GDT.  CR0.  CR3.  CR4.  Page
   dirs/tables. MTRR's.  Intel recommends cache-enabled and write-back
-  policies (not write-thru).  The "Memory Cache Control" chapter in the
+  policies (not write-through).  The "Memory Cache Control" chapter in the
   Intel CPU docs is very useful.
 - TLB management.  Shoot down TLB when updating, modifying, deleting any
   existing page dir/table entries, `invlpg` instruction + syntax (pointer
