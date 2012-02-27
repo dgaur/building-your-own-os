@@ -50,7 +50,10 @@ too.
 	+ JX and Singularity OS.  Memory protection based on managed languages (Java + C#, respectively) instead of relying on hardware MMU.  JX appears to be dead?  Singularity is ongoing at MS.
 	+ Unununium.  Python-based OS.  Dead.
 	+ Amiga ROM Kernel Manuals -- both "Libraries and Devices" and "Includes and Autodocs."
-	+ "Writing Systems Software in a Functional Language".  Haskell, House OS.  <http://yav.purely-functional.net/publications/plos07.pdf>
+	+ "Writing Systems Software in a Functional Language".  Haskell, House OS.
+	  Interesting.  Mostly an overview, so a little thin at points, but
+	  touches on some obvious concerns: structure/register layout; performance
+	  and predictability.  <http://yav.purely-functional.net/publications/plos07.pdf>
 
 
 
