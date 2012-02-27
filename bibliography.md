@@ -26,10 +26,11 @@ too.
 + Windows
 	+ Inside Windows NT.  Doesn't discuss all of the low-level details, but still a good description of the NT architecture.  Too much discussion/examples using kernel debugger to examine real system.  Includes specific numbers for scheduling quanta, memory/pool sizes, etc.
 	+ The NT Insider.  Available as periodic journal as well as online at <http://osronline.com>.  Articles geared more towards Windows drivers than kernel development, but still some good topics + discussion here.  Includes discussion of various kernel features, etc.
-+ L3/L4 papers
++ L3/L4
 	+ "Toward Real Microkernels"
-	+ Especially: "On uKernel Construction" and "Improving IPC by Kernel Design"
-	+ All by Jochen Liedtke.  These last two papers should be mandatory reading if you're building a microkernel.  These are all quite good.  Discussion of core/minimal set of micro-kernel features.  Specific discussion and ideas about implementation.  Not well known, perhaps, but the L4 kernels are/were probably the best proof that micro-kernels need not be slower than monolithic kernels.
+	+ "On uKernel Construction"
+	+ "Improving IPC by Kernel Design"
+	+ All by Jochen Liedtke.  These are all quite good, but these last two papers in particular should be mandatory reading if you're building a microkernel.  Discussion of core/minimal set of micro-kernel features.  Specific discussion and ideas about implementation.  Not well known, perhaps, but the L4 kernels are/were probably the best proof that micro-kernels need not be slower than monolithic kernels.
 + Other Unixen
 	+ Lion's Commentary on UNIX.
 	+ Design and Implementation of the 4.4 BSD Operating System by Marshall Kirk McKusick, Keith Bostic, Micahel J. Karels and John S. Quarterman
@@ -49,6 +50,7 @@ too.
 	+ JX and Singularity OS.  Memory protection based on managed languages (Java + C#, respectively) instead of relying on hardware MMU.  JX appears to be dead?  Singularity is ongoing at MS.
 	+ Unununium.  Python-based OS.  Dead.
 	+ Amiga ROM Kernel Manuals -- both "Libraries and Devices" and "Includes and Autodocs."
+	+ "Writing Systems Software in a Functional Language".  Haskell, House OS.  <http://yav.purely-functional.net/publications/plos07.pdf>
 
 
 
@@ -95,6 +97,16 @@ looked at any of these:
 
 
 
+## Data Structures
+Interesting, non-obvious or non-traditional data structures.
+
++ "Performance Analysis of BST's in System Software", Ben Pfaff.  Straightforward paper, but good data.  I selected the tree algorithms + structure for the VM subsystem in part based on this paper.
++ Network Algorithmics: An Interdisciplinary Approach to Designing Fast Networked Devices.  George Varghese.  Mentions interesting ideas about "timing wheels", sort of like calendar queues.
++ "Split-Ordered lists".  Shalev and Shavit.  Lock-free, extensible hash tables.
+	<http://www.cs.tau.ac.il/~shanir/nir-pubs-web/Papers/Split-Ordered_Lists.pdf>
+
+
+
 ## Misc
 + POSIX, UNIX application portability requirements.  <http://www.unix-systems.org>
 + POSIX standards:
@@ -108,6 +120,8 @@ looked at any of these:
 + <http://lwn.net/Articles/217366/>.  Tolerating failure/faults in device drivers.  Includes links to a couple of papers + "Nooks" isolation system.
 + Assembly/HLL interface: <http://lambda-the-ultimate.org/node/2283>
 + Michael Abrash books on graphics + assembly programming.
-+ "Performance Analysis of BST's in System Software", Ben Pfaff.  Straightforward paper, but good data.  I selected the tree algorithms + structure for the VM subsystem in part based on this paper.
-+ Network Algorithmics: An Interdisciplinary Approach to Designing Fast Networked Devices.  George Varghese.  Mentions interesting ideas about "timing wheels", sort of like calendar queues.
++ "Passing a Language through the Eye of a Needle".  Lua design +
+	implementation.  Not strictly OS-related, but found this interesting; in
+	part because Lua is (will be) the preferred tongue of user mode
+	applications.  <http://queue.acm.org/detail.cfm?id=1983083>
 

@@ -246,7 +246,7 @@ context for the memory manager?), especially early in the boot process.
 
 ### Choosing a kernel language
 * Safe choices: assembly, C/C++.
-* Weirder options: scheme (schemix in Linux), kpForth (likewise).
+* Weirder options: Haskell (House OS), scheme (schemix in Linux), kpForth (likewise).
 
 Most folks opt for C with some assembly bits here and
 there.  As always, this is a contentious decision and there is no
